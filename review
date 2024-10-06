@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review Page</title>
+</head>
+<body>
+
+<header>
+    <h1>I Value your Feedback</h1>
+    <nav>
+        <button onclick="location.href='index.html'">Home Page</button>
+        <button onclick="location.href='calendar.html'">Your Calendar</button>
+    </nav>
+</header>
+
+<div class="content">
+    <p>Your experience with my website is very important to me. I strive to continually improve the website, and its features based on your feedback. Please take a moment to share your thoughts and suggestions.</p>
+
+    <h2>Submit Review</h2>
+    <form>
+        <label for="experience">Overall Experience:</label><br>
+        <input type="text" id="experience" name="experience"><br><br>
+
+        <label for="design">Design and Aesthetics:</label><br>
+        <input type="text" id="design" name="design"><br><br>
+
+        <label for="features">Feature Suggestions:</label><br>
+        <input type="text" id="features" name="features"><br><br>
+
+        <label for="usability">Usability:</label><br>
+        <input type="text" id="usability" name="usability"><br><br>
+
+        <label for="comments">Other Comments:</label><br>
+        <input type="text" id="comments" name="comments"><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+</div>
+
+<footer>
+    <p>Your feedback is crucial for me to enhance the website and provide you with the best experience possible. Fill out the form above with your comments and submit it. I appreciate your time and input.</p>
+</footer>
+
+</body>
+</html>

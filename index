@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar Website</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to my Event Calendar Website</h1>
+    <nav>
+        <button onclick="location.href='calendar.html'">Your Calendar</button>
+        <button onclick="location.href='review.html'">Review Page</button>
+    </nav>
+</header>
+
+<div class="content">
+    <img src="https://marketplace.canva.com/EAFuDMPNxt8/2/0/1600w/canva-modern-minimalistic-elegant-monthly-planner-october-2023-calendar-04s36DWazdg.jpg" alt="Calendar Image" width="600" height="400">
+    
+    <h2>Features</h2>
+    <p>
+        Visual Calendar: I have created a clear, visual calendar to view your events briefly and make adjustments as needed.<br>
+        Event Management: Easily add, edit, or delete events. You can customize each event, such as the time, location, and descriptions.<br>
+        Notification Prompts: Set up reminders for upcoming events so you never miss an important appointment or meeting.
+    </p>
+    
+    <h2>Why Use My Website?</h2>
+    <p>
+        User-Friendly Interface: I designed an intuitive calendar so you can navigate and manage your events effortlessly.<br>
+        Customizable Options: Tailor the calendar to suit your preferences with a variety of settings and optional notifications.<br>
+        Secure and Reliable: Your data is protected with robust security measures, ensuring your information is safe, private, and encrypted.
+    </p>
+</div>
+
+<footer>
+    <p>This website is designed with simplicity and functionality, giving you the tools you need to manage your schedule effectively.</p>
+</footer>
+
+</body>
+</html>
