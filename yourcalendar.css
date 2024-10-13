@@ -1,0 +1,101 @@
+/* Body Format */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: black;
+}
+
+/* Header Format */
+header {
+    background-color: dimgray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid blue;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation buttons Format */
+nav button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: darkblue;
+}
+
+/* Content Format */
+.content {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.content img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.content h2 {
+    color: blue;
+    font-size: 1.75rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.content label {
+    font-weight: bold;
+    color: darkgray;
+}
+
+.content input[type="text"],
+.content input[type="email"],
+.content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.content input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.content input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+/* Footer Format */
+footer {
+    background-color: dimgray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid blue;
+}
