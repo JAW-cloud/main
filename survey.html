@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Calendar Usability Survey</title>
+    <title>Calendar Website Usability Survey</title>
     <script>
         function showConfirmation(event) {
-            event.preventDefault();
-            document.getElementById("confirmation-message").style.display = "block";
+            event.preventDefault(); // Prevents the form from submitting in the traditional way
+            document.getElementById("confirmation-message").style.display = "block"; // Shows the confirmation message
         }
     </script>
 </head>
 <body>
     <h1>Event Calendar Usability Survey</h1>
-    <form action="/submit-survey" method="post">
+    
+    <form onsubmit="showConfirmation(event)">
         
         <label for="name">First and Last Name:</label><br>
         <input type="text" id="name" name="name" required><br><br>
@@ -39,7 +40,7 @@
         <label for="improvements">What features or improvements would you suggest for the website?</label><br>
         <textarea id="improvements" name="improvements" rows="4" cols="50" placeholder="Enter your suggestions here..."></textarea><br><br>
 
-        <label for="frequency">How often do you use the website?</label><br>
+        <label for="frequency">How often do you use the Calendar website?</label><br>
         <select id="frequency" name="frequency" required>
             <option value="daily">Daily</option>
             <option value="weekly">Weekly</option>
@@ -91,9 +92,9 @@
         <button type="submit">Submit Survey</button>
 
     </form>
-     <p id="confirmation-message" style="display:none; color:green;">
+    
+    <p id="confirmation-message" style="display:none; color:green;">
         Thank you! Your response has been recorded.
     </p>
 </body>
 </html>
-
