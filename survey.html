@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Website Usability Survey</title>
+</head>
+<body>
+    <h1>Calendar Website Usability Survey</h1>
+    <form action="/submit-survey" method="post">
+        
+        <label for="name">First and Last Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="ease-of-use">How easy was it to navigate the Calendar website?</label><br>
+        <select id="ease-of-use" name="ease-of-use" required>
+            <option value="1">1 - Very Difficult</option>
+            <option value="2">2 - Difficult</option>
+            <option value="3">3 - Neutral</option>
+            <option value="4">4 - Easy</option>
+            <option value="5">5 - Very Easy</option>
+        </select><br><br>
+
+        <label for="visual-appeal">How visually appealing did you find the Calendar website?</label><br>
+        <select id="visual-appeal" name="visual-appeal" required>
+            <option value="1">1 - Very Unappealing</option>
+            <option value="2">2 - Unappealing</option>
+            <option value="3">3 - Neutral</option>
+            <option value="4">4 - Appealing</option>
+            <option value="5">5 - Very Appealing</option>
+        </select><br><br>
+
+        <label for="improvements">What features or improvements would you suggest for the Calendar website?</label><br>
+        <textarea id="improvements" name="improvements" rows="4" cols="50" placeholder="Enter your suggestions here..."></textarea><br><br>
+
+        <label for="frequency">How often do you use the Calendar website?</label><br>
+        <select id="frequency" name="frequency" required>
+            <option value="daily">Daily</option>
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="rarely">Rarely</option>
+            <option value="never">Never</option>
+        </select><br><br>
+
+        <label for="best-feature">What do you like most about the Calendar website?</label><br>
+        <textarea id="best-feature" name="best-feature" rows="4" cols="50" placeholder="Enter your favorite feature here..."></textarea><br><br>
+
+        <button type="submit">Submit Survey</button>
+
+    </form>
+</body>
+</html>
