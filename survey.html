@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Calendar Usability Survey</title>
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault();
+            document.getElementById("confirmation-message").style.display = "block";
+        }
+    </script>
 </head>
 <body>
     <h1>Event Calendar Usability Survey</h1>
