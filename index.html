@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Super Calendar">
     <meta name="keywords" content="HTML,Calendar,Scheduling, Events,Event Planning">
-    <meta name="author" content="Jacob Waddell"
+    <meta name="author" content="Jacob Waddell">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Calendar Website</title>
     <link rel="stylesheet" href="styles.css">
@@ -46,11 +46,37 @@
         Customizable Options: Tailor the calendar to suit your preferences with a variety of settings and optional notifications.<br>
         Secure and Reliable: Your data is protected with robust security measures, ensuring your information is safe, private, and encrypted.
     </p>
+
+    <!-- Social Media Share Buttons -->
+    <div class="social-share">
+        <button class="share-button facebook" onclick="shareOnFacebook()">Share on Facebook</button>
+        <button class="share-button instagram" onclick="shareOnInstagram()">Share on Instagram</button>
+        <button class="share-button twitter" onclick="shareOnTwitter()">Share on X</button>
+    </div>
 </div>
 
 <footer>
     <p>This website is designed with simplicity and functionality, giving you the tools you need to manage your schedule effectively.</p>
 </footer>
+
+<script>
+    const pageUrl = encodeURIComponent(window.location.href);
+
+    function shareOnFacebook() {
+        const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+        window.open(facebookUrl, '_blank');
+    }
+
+    function shareOnInstagram() {
+        alert("Instagram doesn't support direct web sharing. You can copy the link and share it in your Instagram bio or story.");
+        navigator.clipboard.writeText(window.location.href);
+    }
+
+    function shareOnTwitter() {
+        const twitterUrl = `https://twitter.com/intent/tweet?url=${pageUrl}`;
+        window.open(twitterUrl, '_blank');
+    }
+</script>
 
 </body>
 </html>
